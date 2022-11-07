@@ -22,7 +22,7 @@ tick_running = 20
 tick = 60
 generation = 0
 show_generation = True
-font = pygame.font.SysFont('',block_size*2)
+font = pygame.font.SysFont(None,block_size*2)
 
 screen = pygame.display.set_mode((screen_width,screen_height))
 pygame.display.set_caption('Game of Life')
@@ -125,7 +125,7 @@ while True:
 
     draw_grid()
 
-    text = font.render(str(generation),True,WHITE,BLACK)
+    text = font.render(str(generation),True,(200,200,200))
     text_width = text.get_rect()[2]
     if show_generation:
         screen.blit(text,(screen_width-text_width-5,5))
