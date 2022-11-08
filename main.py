@@ -6,7 +6,6 @@ pygame.init()
 WHITE = (255,255,255)
 BLACK = (0,0,0)
 GRAY = (127,127,127)
-BLUE = (102,103,171)
 CLOCK = pygame.time.Clock()
 
 block_size = 15
