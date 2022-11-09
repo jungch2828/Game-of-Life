@@ -107,20 +107,20 @@ while True:
         generation += 1
         tick = tick_running
         line_color = BLACK
-        for row in range(block_per_height):
-            for col in range(block_per_width):
-                board[row][col].func()
-        for row in range(block_per_height):
-            for col in range(block_per_width):
-                board[row][col].state = board[row][col].state_next
+        for row in board:
+            for cell in row:
+                cell.func()
+        for row in board:
+            for cell in row:
+                cell.state = cell.state_next
     else:
         tick = 60
         line_color = GRAY
 
-    for row in range(block_per_height):
-        for col in range(block_per_width):
-            if board[row][col].state == 1:
-                board[row][col].draw()
+    for row in board:
+        for cell in row:
+            if cell.state == 1:
+                cell.draw()
 
     draw_grid()
 
