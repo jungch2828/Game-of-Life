@@ -8,9 +8,9 @@ BLACK = (0,0,0)
 GRAY = (127,127,127)
 CLOCK = pygame.time.Clock()
 
-block_size = 180
-num_block_width = 4
-num_block_height = 4
+block_size = 15
+num_block_width = 60
+num_block_height = 50
 screen_width = block_size * num_block_width
 screen_height = block_size * num_block_height
 line_width = 1
